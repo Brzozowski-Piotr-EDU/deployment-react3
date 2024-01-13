@@ -1,0 +1,3 @@
+dlaczego react wyrzuca dwa fetche mimo zrobionego jednego:
+
+od react 18 zrobili tak że useeffect w dev wywołuje się dwa razy
