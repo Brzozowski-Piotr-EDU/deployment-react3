@@ -19,6 +19,7 @@ export const Recipes = () => {
       })
       .then((data) => {
         setRecipes(data.recipes);
+        console.log(data.recipes);
       })
       .catch((error) => {
         /**
@@ -36,7 +37,7 @@ export const Recipes = () => {
       <div
         style={{ display: "flex", justifyContent: "center", marginTop: "10vh" }}
       >
-        <ClipLoader color="white" size={150} />
+        <ClipLoader color="green" size={150} />
       </div>
     );
   }

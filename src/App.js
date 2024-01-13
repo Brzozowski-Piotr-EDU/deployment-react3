@@ -30,7 +30,7 @@ function App() {
 
   return (
     <main className="container">
-      <article>
+      <article style={{ background: "black" }}>
         <h1>Welcome to the world of Recipes</h1>
       </article>
       <Recipes></Recipes>

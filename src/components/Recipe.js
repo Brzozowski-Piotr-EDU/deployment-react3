@@ -10,8 +10,9 @@ export const Recipe = ({ recipe }) => {
       <span>{recipe.instructions}</span>
       <img src={recipe.image} alt="Recipe" />
     </article>*/
-    <article>
+    <article style={{ background: "black" }}>
       <h2>{recipe.name}</h2>
+      <span style={{ color: "grey" }}>{recipe.mealType}</span>
       <h3>Ingredients:</h3>
       <ul>
         {recipe.ingredients.map((ingredients) => (
@@ -25,6 +26,7 @@ export const Recipe = ({ recipe }) => {
         ))}
       </ul>
       <img src={recipe.image} alt="Recipe" style={{ width: "50%" }} />
+      <h4 style={{ color: "grey" }}>Tags: {recipe.tags.join(",")}</h4>
     </article>
   );
 };
