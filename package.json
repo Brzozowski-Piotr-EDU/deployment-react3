@@ -1,7 +1,7 @@
 {
   "name": "recipes-app",
   "version": "0.1.0",
-  "homepage": "https://brzozowski-piotr-edu.github.io/deployment-react2",
+  "homepage": "https://brzozowski-piotr-edu.github.io/deployment-react3",
   "private": true,
   "dependencies": {
     "@picocss/pico": "^1.5.11",

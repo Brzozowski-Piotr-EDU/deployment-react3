@@ -11,8 +11,16 @@ export const Recipe = ({ recipe }) => {
       <img src={recipe.image} alt="Recipe" />
     </article>*/
     <article style={{ background: "black" }}>
-      <h2>{recipe.name}</h2>
-      <span style={{ color: "grey" }}>{recipe.mealType}</span>
+      <h2>
+        {recipe.name} ({recipe.difficulty})
+      </h2>
+      <span style={{ display: "flex" }}>
+        Time needed: {recipe.prepTimeMinutes} min
+      </span>
+      <span style={{ display: "flex" }}>
+        Calories per saving: {recipe.caloriesPerServing}
+      </span>
+      {/*<span style={{ color: "grey", display: "flex" }}>{recipe.mealType}</span>*/}
       <h3>Ingredients:</h3>
       <ul>
         {recipe.ingredients.map((ingredients) => (
